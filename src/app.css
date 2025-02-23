@@ -1,2 +1,17 @@
 @import 'tailwindcss';
 @import url(https://db.onlinewebfonts.com/c/25c294f3631fb5a0c1ef659a85cabdcf?family=Sifonn-Pro);
+
+/*Theme*/
+.baseTheme {
+    --primary: #504095;
+    --primaryVar: #404F9A;
+    --primaryAcc: #89CFE4;
+    --text: #0F0F0F;
+    --background: #E0E0E0;
+}
+ 
+.cta-button {
+    padding: 1.5rem 0.9rem;
+    border-radius: 13px;
+
+}
