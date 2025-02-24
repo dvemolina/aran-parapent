@@ -26,7 +26,7 @@
     <div class="w-full flex flex-row justify-between @6xl:justify-evenly items-center p-4">
         <!-- Logo -->
         <a href="/">
-            <img src="/logo/logo-blanc.png" alt="Aran Parapent - Inicio" class="{isScrolled ? 'max-w-[6rem]' : 'max-w-[6rem]'} @6xl:{isScrolled ? 'max-w-[8rem]' : 'max-w-[8rem]'} transition-all">
+            <img src="/logo/logo-blanc.png" alt="Aran Parapent - Inicio" class="{isScrolled ? 'max-w-[5rem]' : 'max-w-[6rem]'} @6xl:{isScrolled ? 'max-w-[6rem]' : 'max-w-[7rem]'} transition-all">
         </a>
 
         <!-- Desktop Nav -->
@@ -35,7 +35,7 @@
         <a href="#" class="text-neutral-300 hover:text-primary font-semibold">Aran Parapent</a>
         <a href="#" class="text-neutral-300 hover:text-primary font-semibold">Contacto</a>
         <a href="#" class="text-neutral-300 hover:text-primary font-semibold">
-            <img src="/svg/instagram.svg" alt="Instagram: @aranparapent" class=" @6xl:size-8 size-10 invert">
+            <img src="/svg/instagram.svg" alt="Instagram: @aranparapent" class=" @6xl:size-7 size-8 invert">
         </a>
         </nav>
 
@@ -59,7 +59,7 @@
         <a href="#" class="text-neutral-300 hover:text-primary font-semibold">Aran Parapent</a>
         <a href="#" class="text-neutral-300 hover:text-primary font-semibold">Contacto</a>
         <a href="#" class="text-neutral-300 hover:text-primary font-semibold">
-            <img src="/svg/instagram.svg" alt="Instagram: @aranparapent" class="size-8 invert"/>
+            <img src="/svg/instagram.svg" alt="Instagram: @aranparapent" class="size-7 invert"/>
         </a>
     
     </nav>  
@@ -71,13 +71,15 @@
     background-color: rgba(13, 6, 3, 0.565);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
+    transition: all ease-in-out 0.3s;
  }
 
  .scrolled{
-    height: 75px;
+    height: 70px;
     background-color: rgba(13, 6, 3, 0.568);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
+    transition: all ease-in-out 0.3s;
  }
 
 </style>
