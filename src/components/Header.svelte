@@ -23,19 +23,19 @@
   class:scrolled={isScrolled}
   class:openMenu={menuOpen}
 >
-    <div class="w-full flex flex-row justify-between @6xl:justify-evenly items-center p-4">
+    <div class="w-full flex flex-row justify-between @5xl:justify-around items-center p-4">
         <!-- Logo -->
         <a href="/">
-            <img src="/logo/logo-blanc.png" alt="Aran Parapent - Inicio" class="{isScrolled ? 'max-w-[5rem]' : 'max-w-[6rem]'} @6xl:{isScrolled ? 'max-w-[6rem]' : 'max-w-[7rem]'} transition-all">
+            <img src="/logo/logo-blanc.png" alt="Aran Parapent - Inicio" class="{isScrolled ? 'max-w-[5rem]' : 'max-w-[6rem]'} @5xl:{isScrolled ? 'max-w-[6rem]' : 'max-w-[7rem]'} transition-all">
         </a>
 
         <!-- Desktop Nav -->
         <nav class="@lg:flex flex-row justify-center items-center hidden space-x-6">
-        <a href="#" class="text-neutral-300 hover:text-primary font-semibold">Servicios</a>
-        <a href="#" class="text-neutral-300 hover:text-primary font-semibold">Aran Parapent</a>
-        <a href="#" class="text-neutral-300 hover:text-primary font-semibold">Contacto</a>
-        <a href="#" class="text-neutral-300 hover:text-primary font-semibold">
-            <img src="/svg/instagram.svg" alt="Instagram: @aranparapent" class=" @6xl:size-7 size-8 invert">
+        <a href="#" class="text-neutral-300 hover:text-neutral-100 font-semibold">Servicios</a>
+        <a href="#" class="text-neutral-300 hover:text-neutral-100 font-semibold">Aran Parapent</a>
+        <a href="#" class="text-neutral-300 hover:text-neutral-100 font-semibold">Contacto</a>
+        <a href="#" class="text-neutral-300 hover:text-neutral-100 font-semibold">
+            <img src="/svg/instagram.svg" alt="Instagram: @aranparapent" class="size-5 invert">
         </a>
         </nav>
 
@@ -59,7 +59,7 @@
         <a href="#" class="text-neutral-300 hover:text-primary font-semibold">Aran Parapent</a>
         <a href="#" class="text-neutral-300 hover:text-primary font-semibold">Contacto</a>
         <a href="#" class="text-neutral-300 hover:text-primary font-semibold">
-            <img src="/svg/instagram.svg" alt="Instagram: @aranparapent" class="size-7 invert"/>
+            <img src="/svg/instagram.svg" alt="Instagram: @aranparapent" class="size-5 invert"/>
         </a>
     
     </nav>  
