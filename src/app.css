@@ -1,17 +1,75 @@
-@import 'tailwindcss';
 @import url(https://db.onlinewebfonts.com/c/25c294f3631fb5a0c1ef659a85cabdcf?family=Sifonn-Pro);
+@import 'tailwindcss';
 
 /*Theme*/
-.baseTheme {
-    --primary: #504095;
-    --primaryVar: #404F9A;
-    --primaryAcc: #89CFE4;
-    --text: #0F0F0F;
-    --background: #E0E0E0;
-}
- 
-.cta-button {
-    padding: 1.5rem 0.9rem;
-    border-radius: 13px;
+:root {
 
+    html, body {
+        padding: 0;
+        margin:0;
+    }
+
+    --primary: rgba(80, 64, 149);
+    --primaryVar: rgba(64, 79, 154);
+    --primaryAcc: rgba(137, 207, 228);
+    --secondary: rgba(174, 85, 25);
+    --secondaryVar: rgba(205, 77, 48);
+    --text: rgba(15, 15, 15);
+    --background: rgba(224, 224, 224);
+    --sifon: 'Sifonn-Pro';
+    --primaryGradient: linear-gradient(90deg, 
+      var(--primaryAcc) 0%,
+      rgb(135, 162, 224) 25%, 
+      rgb(137, 164, 228) 50%, 
+      rgb(133, 146, 214) 75%, 
+      rgb(124, 138, 209) 100%
+    );
+    --ctaPrimaryGradient: linear-gradient(90deg,  
+      var(--primary) 0%, 
+      var(--primaryVar) 100%
+    );
+    --ctaSecondaryGradient: linear-gradient(90deg,  
+      var(--secondary) 0%, 
+      var(--primaryVar) 110%
+    );
 }
+
+.sifon {
+    font-family: var(--sifon);
+}
+.cta-button {
+    padding: 0.9rem 1.5rem;
+    border-radius: 13px;
+    background: linear-gradient(90deg, var(--primary) 0%, var(--primaryVar) 40%, var(--secondary) 50%, var(--secondaryVar) 100%);
+    background-size: 250% 100%; /* Make the gradient twice as wide initially */
+    background-position: 100% 0; /* Start the gradient from the right */
+    color: var(--background);
+    font-family: 'Sifonn-Pro';
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .cta-button:hover {
+    cursor: pointer;
+    background-position: 0 100%; /* Move the gradient to the left */
+    color: var(--background);
+    transform: scale(1.05);
+  }
+  
+  .cta-button:focus {
+    outline: none;
+  }
+  
+
+.text-gradient {
+    background: var(--primaryGradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-outline {
+    -webkit-text-stroke: 0.5px #89cfe475; /* Change color and stroke width */
+    color: transparent; /*Make the text color transparent so the outline is visible */
+    background-clip: text;
+    z-index: 1;
+  }

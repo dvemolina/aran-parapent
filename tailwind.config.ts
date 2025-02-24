@@ -1,27 +1,25 @@
-import containerQueries from '@tailwindcss/container-queries';
 import forms from '@tailwindcss/forms';
 import type { Config } from 'tailwindcss';
 
 export default {
-	//darkMode: "selector",
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	theme: {
 		extend: {
 			colors: {
-				primary: "var(--primary)",
-				primaryVar: "var(--primaryVar)",
-				primaryAcc: "var(--primaryAcc)",
-				text: "var(--text)",
-				background: "var(--background)"
+				primary: "rgb(var(--primary) / <alpha-value>)",
+				primaryVar: "rgb(var(--primaryVar) / <alpha-value>)",
+				primaryAcc: "rgb(var(--primaryAcc) / <alpha-value>)",
+				secondary: "rgb(var(--secondary) / <alpha-value>)",
+				text: "rgb(var(--text) / <alpha-value>)",
+				background: "rgb(var(--background) / <alpha-value>)",
 			},
 			fontFamily: {
-				sifon: ['Sifonn-Pro', 'Arial', 'Helvetica', 'sans-serif'], 
-			  },
+				sifon: ['Sifonn-Pro', 'Arial', 'Helvetica', 'sans-serif'],
+			},
 			screens: {
 				"2xl": "1795px"
 			}
 		}
 	},
-
-	plugins: [forms, containerQueries]
+	plugins: [forms]
 } satisfies Config;
