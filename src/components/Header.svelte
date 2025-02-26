@@ -31,10 +31,10 @@
 
         <!-- Desktop Nav -->
         <nav class="@lg:flex flex-row justify-center items-center hidden space-x-6">
-        <a href="#" class="text-neutral-300 hover:text-neutral-100 font-semibold">Servicios</a>
-        <a href="#" class="text-neutral-300 hover:text-neutral-100 font-semibold">Aran Parapent</a>
-        <a href="#" class="text-neutral-300 hover:text-neutral-100 font-semibold">Contacto</a>
-        <a href="#" class="text-neutral-300 hover:text-neutral-100 font-semibold">
+        <a href="#" class="text-neutral-300 hover:text-neutral-100 font-normal">Servicios</a>
+        <a href="#" class="text-neutral-300 hover:text-neutral-100 font-normal">Aran Parapent</a>
+        <a href="#" class="text-neutral-300 hover:text-neutral-100 font-normal">Contacto</a>
+        <a href="#" class="text-neutral-300 hover:text-neutral-100 font-normal">
             <img src="/svg/instagram.svg" alt="Instagram: @aranparapent" class="size-5 invert">
         </a>
         </nav>
@@ -55,10 +55,10 @@
     class:hidden={!menuOpen}
     
     >
-        <a href="#" class="text-neutral-300 hover:text-primary font-semibold">Servicios</a>
-        <a href="#" class="text-neutral-300 hover:text-primary font-semibold">Aran Parapent</a>
-        <a href="#" class="text-neutral-300 hover:text-primary font-semibold">Contacto</a>
-        <a href="#" class="text-neutral-300 hover:text-primary font-semibold">
+        <a href="#" class="text-neutral-300 hover:text-primary font-normal">Servicios</a>
+        <a href="#" class="text-neutral-300 hover:text-primary font-normal">Aran Parapent</a>
+        <a href="#" class="text-neutral-300 hover:text-primary font-normal">Contacto</a>
+        <a href="#" class="text-neutral-300 hover:text-primary font-normal">
             <img src="/svg/instagram.svg" alt="Instagram: @aranparapent" class="size-5 invert"/>
         </a>
     
@@ -68,7 +68,7 @@
 <style>
  .openMenu {
     height: 100dvh;
-    background-color: rgba(13, 6, 3, 0.565);
+    background: rgba(255, 255, 255, 0.214);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     transition: all ease-in-out 0.3s;
@@ -76,7 +76,7 @@
 
  .scrolled{
     height: 70px;
-    background-color: rgba(13, 6, 3, 0.568);
+    background: rgba(255, 255, 255, 0.214);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     transition: all ease-in-out 0.3s;

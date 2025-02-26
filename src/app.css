@@ -30,16 +30,29 @@
     );
     --ctaSecondaryGradient: linear-gradient(90deg,  
       var(--secondary) 0%, 
-      var(--primaryVar) 110%
+      var(--secondaryVar) 100%
+    );
+    --primaryGradientVertical: linear-gradient(180deg, 
+      rgb(137, 164, 228) 0%, 
+      rgb(133, 146, 214) 50%, 
+      var(--primaryVar) 100%
+    );
+    --secondaryGradientVertical: linear-gradient(180deg,  
+      var(--secondary) 0%, 
+      var(--secondaryVar) 100%
+    );
+    --ctaPrimaryGradientVertical: linear-gradient(180deg,  
+      var(--primaryVar) 0%,
+      var(--primary) 100%
     );
 }
 
 .sifon {
     font-family: var(--sifon);
 }
-.cta-button {
+.cta-button-primary {
     padding: 0.9rem 1.5rem;
-    border-radius: 13px;
+    border-radius: 360px;
     background: linear-gradient(-90deg, var(--primary) 0%, var(--primaryVar) 40%, var(--secondary) 50%, var(--secondaryVar) 100%);
     background-size: 250% 100%; /* Make the gradient twice as wide initially */
     background-position: 100% 0; /* Start the gradient from the right */
@@ -48,14 +61,36 @@
     transition: all 0.2s ease-in-out;
   }
   
-  .cta-button:hover {
+  .cta-button-primary:hover {
     cursor: pointer;
     background-position: 0 100%; /* Move the gradient to the left */
     color: var(--background);
     transform: scale(1.05);
   }
   
-  .cta-button:focus {
+  .cta-button-primary:focus {
+    outline: none;
+  }
+
+  .cta-button-secondary {
+    padding: 0.9rem 1.5rem;
+    border-radius: 360px;
+    background: linear-gradient(-90deg, var(--secondaryVar) 0%, var(--secondary) 40%, var(--primaryVar) 50%, var(--primary) 100%);
+    background-size: 250% 100%; /* Make the gradient twice as wide initially */
+    background-position: 100% 0; /* Start the gradient from the right */
+    color: var(--background);
+    font-family: 'Sifonn-Pro';
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .cta-button-secondary:hover {
+    cursor: pointer;
+    background-position: 0 100%; /* Move the gradient to the left */
+    color: var(--background);
+    transform: scale(1.05);
+  }
+  
+  .cta-button-secondary:focus {
     outline: none;
   }
   
