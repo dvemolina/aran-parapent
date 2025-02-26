@@ -10,9 +10,9 @@
 </script>
 <section class="h-full w-full flex flex-col justify-center items-center gap-10 px-4 lg:px-18 py-16 lg:py-28">
         <div class="flex flex-col gap-2 w-full">
-            <h1 class="sifon text-center text-4xl text-neutral-900">
+            <h1 class="sifon text-center text-3xl lg:text-4xl text-neutral-900">
                DESCUBRE NUESTROS VUELOS <br>
-            <span class="text-[2.5rem]">MAS ESPECIALES</span></h1>
+            <span class="text-[2rem] lg:text-[2.5rem]">MAS ESPECIALES</span></h1>
             <p class="font-sans text-md lg:text-xl text-center text-neutral-900 pt-4">Vuelos tranquilos de tarde, vuelos termicos de adrenalina o actividad combinada de Trekking y Vuelo desde puntos escondidos.</p>
         </div>
         <div class="services w-full flex flex-col lg:flex-row gap-6 lg:gap-8 justify-center items-center">

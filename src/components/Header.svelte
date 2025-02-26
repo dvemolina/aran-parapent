@@ -34,7 +34,7 @@
         <a href="#" class="text-neutral-300 hover:text-neutral-100 font-normal">Servicios</a>
         <a href="#" class="text-neutral-300 hover:text-neutral-100 font-normal">Aran Parapent</a>
         <a href="#" class="text-neutral-300 hover:text-neutral-100 font-normal">Contacto</a>
-        <a href="#" class="text-neutral-300 hover:text-neutral-100 font-normal">
+        <a href="https://instagram.com/aranparapent" class="text-neutral-300 hover:text-neutral-100 font-normal">
             <img src="/svg/instagram.svg" alt="Instagram: @aranparapent" class="size-5 invert">
         </a>
         </nav>
@@ -68,17 +68,18 @@
 <style>
  .openMenu {
     height: 100dvh;
-    background: rgba(255, 255, 255, 0.214);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    background: rgba(47, 47, 47, 0.214);
+    backdrop-filter: blur(27px);
+    -webkit-backdrop-filter: blur(27px);
     transition: all ease-in-out 0.3s;
+    z-index: 99;
  }
 
  .scrolled{
     height: 70px;
-    background: rgba(255, 255, 255, 0.214);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    background: rgba(47, 47, 47, 0.214);
+    backdrop-filter: blur(27px);
+    -webkit-backdrop-filter: blur(27px);
     transition: all ease-in-out 0.3s;
  }
 

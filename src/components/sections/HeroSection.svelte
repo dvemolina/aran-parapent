@@ -26,9 +26,9 @@
     position: absolute;
     inset: 0;
     background: linear-gradient(to top, 
-      rgba(0, 0, 0, 0.544) 15%,  /* Darkest part at the bottom (10% of the height) */
-      rgba(0, 0, 0, 0.363) 40%,  /* Mid transition (30% of the height) */
-      rgba(0, 0, 0, 0.127) 60%,  /* Light fade at 60% */
+      rgba(0, 0, 0, 0.632) 15%,  /* Darkest part at the bottom (10% of the height) */
+      rgba(0, 0, 0, 0.499) 40%,  /* Mid transition (30% of the height) */
+      rgba(0, 0, 0, 0.214) 60%,  /* Light fade at 60% */
       rgba(0, 0, 0, 0.048) 100%         /* Fully transparent at the top */
     );
   }

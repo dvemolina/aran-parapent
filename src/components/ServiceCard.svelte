@@ -12,12 +12,12 @@
     let { service }: Props = $props();
 </script>
 
-<div class="card card-vertical  border border-neutral-500/75 w-full rounded-lg flex flex-col p-6 gap-4 relative">
+<div class="card card-vertical  w-full rounded-lg flex flex-col p-6 gap-4 relative">
     <h1 class="text-neutral-950 font-semibold text-lg">{service.title}</h1>
     
     <!-- Fixed size container with aspect ratio -->
     <div class="image-container-vertical rounded-lg">
-        <img src={service.imageUrl} alt={service.title} class="image-vertical">
+        <img src={service.imageUrl} alt={service.title} class="image-vertical" loading="lazy">
     </div>
 
     <p class="text-neutral-800">{service.description}</p>
@@ -26,7 +26,7 @@
     </div>
 </div>
 
-<div class="card card-horizontal border border-neutral-500/75 w-full rounded-lg hidden flex-row p-4 gap-4 relative">
+<div class="card card-horizontal  w-full rounded-lg hidden flex-row p-4 gap-4 relative">
     
     <!-- Fixed size container with aspect ratio -->
     <div class="image-container-horizontal rounded-lg">
@@ -45,7 +45,7 @@
 <style>
 
     .card {
-        background: rgba(242, 242, 242, 0.731);
+        background: rgba(242, 242, 242, 0.626);
         box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.077);
     }
 
