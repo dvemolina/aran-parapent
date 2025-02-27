@@ -30,10 +30,11 @@
         </a>
 
         <!-- Desktop Nav -->
-        <nav class="@lg:flex flex-row justify-center items-center hidden space-x-6">
-        <a href="#" class="text-neutral-300 hover:text-neutral-100 font-normal">Servicios</a>
-        <a href="#" class="text-neutral-300 hover:text-neutral-100 font-normal">Aran Parapent</a>
-        <a href="#" class="text-neutral-300 hover:text-neutral-100 font-normal">Contacto</a>
+
+        <nav class="@lg:flex flex-row justify-center items-center hidden space-x-6 {isScrolled ? "lg:opacity-100" : "lg:opacity-0"} transition-all">
+        <a href="#" class="text-neutral-100 hover:text-neutral-50 font-normal">Servicios</a>
+        <a href="#" class="text-neutral-100 hover:text-neutral-50 font-normal">Aran Parapent</a>
+        <a href="#" class="text-neutral-100 hover:text-neutral-50 font-normal">Contacto</a>
         <a href="https://instagram.com/aranparapent" class="text-neutral-300 hover:text-neutral-100 font-normal">
             <img src="/svg/instagram.svg" alt="Instagram: @aranparapent" class="size-5 invert">
         </a>
@@ -77,9 +78,10 @@
 
  .scrolled{
     height: 70px;
-    background: rgba(47, 47, 47, 0.214);
-    backdrop-filter: blur(27px);
-    -webkit-backdrop-filter: blur(27px);
+    /* background: rgba(0, 0, 0, 0.214); */
+    background: rgba(47, 47, 47, 0.214);  
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     transition: all ease-in-out 0.3s;
  }
 
