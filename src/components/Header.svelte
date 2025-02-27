@@ -21,7 +21,7 @@
 <header
   class="@container fixed w-full top-0 left-0 z-50 transition-all"
   class:scrolled={isScrolled}
-  class:openMenu={menuOpen}
+  class:openMenu={menuOpen || isScrolled}
 >
     <div class="w-full flex flex-row justify-between @5xl:justify-around items-center p-4">
         <!-- Logo -->
