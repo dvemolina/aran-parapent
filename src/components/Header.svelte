@@ -61,10 +61,10 @@
       class="@lg:hidden flex flex-col items-center space-y-4 p-4 w-full h-full"
       class:hidden={!menuOpen}
     >
-      <a href="#services-section" class="text-neutral-300 hover:text-primary font-normal">Servicios</a>
-      <a href="#about-section" class="text-neutral-300 hover:text-primary font-normal">Aran Parapent</a>
-      <a href="#" class="text-neutral-300 hover:text-primary font-normal">Contacto</a>
-      <a href="https://instagram.com/aranparapent" class="text-neutral-300 hover:text-primary font-normal">
+      <a onclick={toggleMenu} href="#services-section" class="text-neutral-300 hover:text-primary font-normal">Servicios</a>
+      <a onclick={toggleMenu} href="#about-section" class="text-neutral-300 hover:text-primary font-normal">Aran Parapent</a>
+      <a onclick={toggleMenu} href="#" class="text-neutral-300 hover:text-primary font-normal">Contacto</a>
+      <a onclick={toggleMenu} href="https://instagram.com/aranparapent" class="text-neutral-300 hover:text-primary font-normal">
         <img src="/svg/instagram.svg" alt="Instagram: @aranparapent" class="size-5 invert"/>
       </a>
     </nav>
