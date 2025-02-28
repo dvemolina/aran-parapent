@@ -73,7 +73,7 @@
   }
 
   .cta-button-secondary {
-    padding: 0.9rem 1.5rem;
+    padding: 0.9rem 1.8rem;
     border-radius: 360px;
     background: linear-gradient(-90deg, var(--secondaryVar) 0%, var(--secondary) 40%, var(--primaryVar) 50%, var(--primary) 100%);
     background-size: 250% 100%; /* Make the gradient twice as wide initially */

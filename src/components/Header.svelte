@@ -21,7 +21,7 @@
 <header
   class="@container fixed w-full top-0 left-0 z-50 transition-all"
   class:scrolled={isScrolled}
-  class:openMenu={menuOpen || isScrolled}
+  class:openMenu={menuOpen}
 >
     <div class="w-full flex flex-row justify-between @5xl:justify-around items-center p-4">
         <!-- Logo -->
@@ -52,7 +52,7 @@
     </div>
     <!-- Mobile Menu (Collapsible) -->
     <nav
-    class="@lg:hidden flex flex-col items-center space-y-4 p-4 w-full h-full"
+    class="@lg:hidden flex flex-col {menuOpen ? "bg-[rgba(47, 47, 47, 0.214)]" : ""} items-center space-y-4 p-4 w-full h-full"
     class:hidden={!menuOpen}
     
     >
@@ -69,7 +69,7 @@
 <style>
  .openMenu {
     height: 100dvh;
-    background: rgba(47, 47, 47, 0.214);
+    
     backdrop-filter: blur(27px);
     -webkit-backdrop-filter: blur(27px);
     transition: all ease-in-out 0.3s;

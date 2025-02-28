@@ -20,17 +20,7 @@
             <ServiceCard {service}/>
             {/each}
         </div>
-        <div class="flex flex-col items-center justify-center text-neutral-800 py-6">
-            
-            <ul>
-                <li> - Tener entre 10 y 65 anos</li>
-                <li> - Ropa comoda para actividad deportiva</li>
-                <li> - Recomendado abrigo y manga larga</li>
-                <li> - Ganas de ver todo desde otra prespectiva</li>
-                <li> - Practicar tu mejor graznido de buitre</li>
-            </ul>
-        </div>
-        <button class="cta-button-secondary w-fit self-center px-4 py-1" aria-label="Quiero Volar">Quiero Volar</button>
+        
 </section>
 
 <style>
