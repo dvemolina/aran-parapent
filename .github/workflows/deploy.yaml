@@ -17,6 +17,8 @@ jobs:
       # Step 2: Instal pnpm
       - name: Install pnpm
         uses: pnpm/action-setup@v4
+        with:
+          version: 10.4.1
 
       # Step 3: Install Node.js
       - name: Setup Node.js
