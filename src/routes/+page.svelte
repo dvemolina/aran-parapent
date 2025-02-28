@@ -14,7 +14,7 @@
 <div class="h-full">
 
 	<HeroSection />
-	<SocialProof />
+	<SocialProof reviews={data.reviews}/>
 	<ServicesSection/>
 	<FAQSection/>
 	<AboutSection/>
