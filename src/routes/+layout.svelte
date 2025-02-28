@@ -15,7 +15,7 @@
 	onMount(() => {
 		setTimeout(() =>
 			loading = false
-		, 1000
+		, 2000
 		)
 	});
   </script>
