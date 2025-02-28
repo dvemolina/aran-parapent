@@ -18,7 +18,7 @@
     
     <!-- Fixed size container with aspect ratio -->
     <div class="image-container-vertical rounded-lg">
-        <img src={service.imageUrl} alt={service.title} class="image-vertical" loading="lazy">
+        <img src={service.imageUrl} alt={service.title} class="image-vertical">
     </div>
 
     <p class="text-neutral-800">{service.description}</p>

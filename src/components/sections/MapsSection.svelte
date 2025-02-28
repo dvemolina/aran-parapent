@@ -7,7 +7,7 @@
       title="AranParapent Location" 
       src={googleMapsUrl} 
       allow="fullscreen" 
-      loading="lazy">
+      >
     </iframe>
   </section>
   

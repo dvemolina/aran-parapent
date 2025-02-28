@@ -13,7 +13,10 @@
   
 	// On mount, set loading to false after the page loads
 	onMount(() => {
-	  loading = false;
+		setTimeout(() =>
+			loading = false
+		, 1000
+		)
 	});
   </script>
   
