@@ -2,11 +2,10 @@
 	import { onMount } from "svelte";
 	import ReviewCard from "../ReviewCard.svelte";
 	import { fade } from "svelte/transition";
-    import googleReviews from '$lib/reviews.json'
+    let { reviews } = $props()
 
     let currentIndex = $state(0);
 	let interval: NodeJS.Timeout | undefined = $state();
-    const reviews = googleReviews.result.reviews
 
     function goToMaps() {
         window.location.href = 'https://maps.app.goo.gl/YFqf97miC2ekGvPdA'
