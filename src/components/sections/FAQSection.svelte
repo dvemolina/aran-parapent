@@ -9,7 +9,7 @@
     ]
 </script>
 
-<section id="faq-section" class="bg-neutral-200 w-full h-full flex flex-col justify-center items-center pt-26 pb-20 gap-8">
+<section id="faq-section" class="bg-neutral-200 w-full h-full flex flex-col justify-center items-center pt-16 lg:pt-26 pb-20 gap-8">
     <div class="w-full max-w-6xl flex flex-col px-4 gap-8">
         <h1 class="sifon text-center  text-3xl lg:text-4xl text-neutral-900 pt-8 lg:pt-0">
             ¿QUE NECESITAS PARA VOLAR?
