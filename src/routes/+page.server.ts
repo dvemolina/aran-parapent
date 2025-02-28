@@ -1,7 +1,7 @@
+import { env } from "$env/dynamic/private";
 import type { PageServerLoad } from "./$types";
-import 'dotenv/config'
 
-const API_KEY = process.env.GOOGLE_MAPS_API_KEY;
+const API_KEY = env.GOOGLE_MAPS_API_KEY;
 const PLACE_ID = 'ChIJPWVVTMuRqBIRmw1nAwK8y-g';
 
 export const load: PageServerLoad = async ({ request }) => {
