@@ -6,8 +6,8 @@
          </a>
      </div>
     <nav class="flex flex-col justify-center items-center">
-        <a href="#" class="text-neutral-300 hover:text-neutral-100 hover:cursor-pointer font-normal">Servicios</a>
-        <a href="#" class="text-neutral-300 hover:text-neutral-100 hover:cursor-pointer font-normal">Aran Parapent</a>
+        <a href="#services-section" class="text-neutral-300 hover:text-neutral-100 hover:cursor-pointer font-normal">Servicios</a>
+        <a href="#about-section" class="text-neutral-300 hover:text-neutral-100 hover:cursor-pointer font-normal">Aran Parapent</a>
         <a href="#" class="text-neutral-300 hover:text-neutral-100 hover:cursor-pointer font-normal">Contacto</a>
     </nav>
     <div class="contact flex flex-col justify-center items-center">
@@ -25,7 +25,7 @@
     </div>
  </div>
  <div class="rights w-full border-t border-neutral-400 mt-2 p-1">
-     <p class="text-center text-neutral-200 text-xs">Todos los derechos reservados</p>
+     <p class="text-center text-neutral-200 text-xs">© Todos los derechos reservados</p>
  </div>
 </footer>
 

@@ -8,6 +8,10 @@
         padding: 0;
         margin:0;
     }
+    
+    html {
+      scroll-behavior: smooth;
+  }
 
     --primary: rgba(80, 64, 149);
     --primaryVar: rgba(64, 79, 154);

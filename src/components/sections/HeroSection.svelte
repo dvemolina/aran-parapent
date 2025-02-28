@@ -1,4 +1,4 @@
-<section class="@container/wrapper overlay w-full relative h-dvh">
+<section id="hero-section" class="@container/wrapper overlay w-full relative h-dvh">
 
     <div class="flex flex-col @5xl:flex-row h-full items-center justify-end bg-[url('portrait-paraglide-cloud.jpg')] @5xl:bg-[url('landscape-paraglide.jpg')] bg-cover bg-center @5xl:bg-right-bottom gap-6
     ">

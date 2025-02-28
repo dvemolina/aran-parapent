@@ -34,13 +34,13 @@
     }
 </script>
 
-<section class="socialproof bg-neutral-200 h-full w-full flex flex-col-reverse justify-center md:flex-row items-center gap-4 px-4 py-16 md:py-28">
+<section id="social-section" class="socialproof bg-neutral-200 h-full w-full flex flex-col-reverse justify-center md:flex-row items-center gap-4 px-4 py-16 md:py-28">
 	<div class="flex flex-col h-full justify-center w-full items-center gap-8 md:gap-4 px-2 md:ml-16">
         <div class="flex flex-col gap-2 justify-center items-center">
             <h1 class="sifon text-center text-3xl lg:text-4xl text-neutral-900 pt-8 lg:pt-0">
                 TU SUEÑO Y EL NUESTRO <br>
                 <span class=" text-[2rem] lg:text-[2.5rem]">HECHO REALIDAD</span></h1>
-                <p class="font-sans text-md md:text-xl text-center text-neutral-800">Volar en Parapente en las montanas de casa es el sueno y privilegio de nuestra vida. Unete a los que ya lo han compartido con nosotros:</p>
+                <p class="font-sans text-md md:text-xl text-center text-neutral-800">Volar en Parapente en las montañas de casa es el sueño y privilegio de nuestra vida. Únete a los que ya lo han compartido con nosotros:</p>
         </div>
         <div class="carousel flex flex-row justify-center items-center gap-2 md:gap-8" transition:fade>
             {#if reviews.length > 0}
@@ -62,7 +62,7 @@
             <video controls poster="/video-cover.jpg">
                 <track kind="captions">
                 <source src="test-video.mp4" type="video/mp4">
-                Your browser does not support the video tag.
+                YTu navegador no es compatible con el video.
             </video>
         </div>
     </div>

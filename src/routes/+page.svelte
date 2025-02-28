@@ -13,7 +13,7 @@
 </script>
 <div class="h-full">
 
-	<HeroSection/>
+	<HeroSection />
 	<SocialProof reviews={data.reviews}/>
 	<ServicesSection/>
 	<FAQSection/>
