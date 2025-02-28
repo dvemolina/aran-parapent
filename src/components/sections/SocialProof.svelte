@@ -58,7 +58,7 @@
     </div>
     <div class="flex flex-col h-full w-full justify-center items-center">
         <div class="video-container rounded-xl border border-neutral-500 shadow-lg">
-            <video controls poster="/video-cover.jpg">
+            <video controls poster="/video-cover.webp">
                 <track kind="captions">
                 <source src="test-video.mp4" type="video/mp4">
                 YTu navegador no es compatible con el video.

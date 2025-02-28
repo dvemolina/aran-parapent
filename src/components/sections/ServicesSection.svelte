@@ -3,8 +3,8 @@
 	import ServiceCard from "../ServiceCard.svelte";
     
     const services = [
-        {title: 'Vuelo Biplaza', description:'Disfruta de un vuelo desde diversas zonas del Pirineo. Puede ser un vuelo tranquilo de 10-15 minutos o si las condiciones lo permiten un vuelo mas potente (térmico) de unos 10-30 minutos que no te dejara indiferente.', imageUrl: 'preparing.jpg', price: "150"},
-        {title: 'Hike & Fly', description: 'Actividad que combina trekking guiado de 1-2 horas con el parapente a la espalda y salir de un sitio poco accesible y privilegiado de vuelo. Para aquellos que prefieren ganarse el descenso. Vuelo de 15-30 minutos (depende condiciones).', imageUrl: 'hike-fly.jpg', price: "250"}
+        {title: 'Vuelo Biplaza', description:'Disfruta de un vuelo desde diversas zonas del Pirineo. Puede ser un vuelo tranquilo de 10-15 minutos o si las condiciones lo permiten un vuelo mas potente (térmico) de unos 10-30 minutos que no te dejara indiferente.', imageUrl: 'preparing.webp', price: "150"},
+        {title: 'Hike & Fly', description: 'Actividad que combina trekking guiado de 1-2 horas con el parapente a la espalda y salir de un sitio poco accesible y privilegiado de vuelo. Para aquellos que prefieren ganarse el descenso. Vuelo de 15-30 minutos (depende condiciones).', imageUrl: 'hike-fly.webp', price: "250"}
     ]
 
 </script>
