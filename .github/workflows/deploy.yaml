@@ -33,17 +33,12 @@ jobs:
         run: pnpm run build
 
       #  Step 5: Deploy to Hostinger via SFTP
-      - name: Deploy to Hostinger via SFTP
-        uses: milanmk/actions-file-deployer@master
+      - name: Deployment to Hostinger
+        uses: anvil-solutions/Fast-FTP-Action@2.1.0
         with:
-          remote-protocol: "ftp"
-          remote-host: ${{ secrets.FTP_SERVER }}
-          remote-user: ${{ secrets.FTP_USERNAME }}
-          remote-port: ${{ secrets.FTP_PORT }}
-          remote-password: ${{ secrets.FTP_PASSWORD }}
-         #ssh-private-key: ${{ secrets.HOSTINGER_SSH_KEY }}
-          remote-path: /public_html
-          local-path: ./build
-          sync: full
+          server: ${{ secrets.FTP_SERVER }}
+          port: ${{ secrets.FTP_PORT }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
 
           
