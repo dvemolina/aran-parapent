@@ -1,6 +1,6 @@
 <section id="hero-section" class="@container/wrapper overlay w-full relative h-dvh">
 
-    <div class="flex flex-col @5xl:flex-row h-full items-center justify-end bg-[url('portrait-paraglide-cloud.webp')] @5xl:bg-[url('landscape-paraglide.webp')] bg-cover bg-center @5xl:bg-right-bottom gap-6
+    <div class="flex flex-col @5xl:flex-row h-full items-center justify-end bg-[url('/portrait-paraglide-cloud.webp')] @5xl:bg-[url('/landscape-paraglide.webp')] bg-cover bg-center @5xl:bg-right-bottom gap-6
     ">
     <div class="h-2/5 @5xl:h-full @5xl:w-2/5"></div>
     <div class="content h-4/6 @5xl:h-full @5xl:w-3/5 z-10 flex flex-col justify-center items-center w-full gap-4">
