@@ -1,3 +1,5 @@
+export const prerender = false; 
+
 import type { PageServerLoad } from "./$types";
 import 'dotenv/config'
 
