@@ -22,7 +22,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20.12.2 # Match your SvelteKit project's Node.js version
+          node-version: 22.14.0 # Match your SvelteKit project's Node.js version
 
       # Step 3: Install dependencies
       - name: Install dependencies
@@ -34,7 +34,7 @@ jobs:
 
       #  Step 5: Deploy to Hostinger via SFTP
       - name: Deployment to Hostinger
-        uses: anvil-solutions/Fast-FTP-Action@2.1.0
+        uses: anvil-solutions/Fast-FTP-Action@2.1.3
         with:
           server: ${{ secrets.FTP_SERVER }}
           port: ${{ secrets.FTP_PORT }}
