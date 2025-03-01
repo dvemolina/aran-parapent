@@ -1,3 +1,10 @@
+<script>
+
+	import ContactModal from "./ContactModal.svelte";
+    let showModal = $state(false)
+
+</script>
+
 <footer>
  <div class="flex flex-col lg:flex-row lg:justify-evenly justify-center items-center gap-6 p-10">  
      <div class="brand">
@@ -8,17 +15,20 @@
     <nav class="flex flex-col justify-center items-center">
         <a href="#services-section" class="text-neutral-300 hover:text-neutral-100 hover:cursor-pointer font-normal">Servicios</a>
         <a href="#about-section" class="text-neutral-300 hover:text-neutral-100 hover:cursor-pointer font-normal">Aran Parapent</a>
-        <a href="#" class="text-neutral-300 hover:text-neutral-100 hover:cursor-pointer font-normal">Contacto</a>
+        <a href="#" onclick={() => showModal = true} class="text-neutral-300 hover:text-neutral-900 hover:cursor-pointer font-normal">Contacto</a>
     </nav>
     <div class="contact flex flex-col justify-center items-center">
-        <div class="phone flex flex-row gap-2">
+        
+        <a href="#" onclick={() => showModal = true} class="phone flex flex-row gap-2">
             <img src="/svg/phone.svg" alt="Telefono" class="size-5 invert">
             <p class="text-neutral-100">+34-649964007</p>
-        </div>
-        <div class="email flex flex-row gap-2">
+        </a>
+            
+        <a href="mailto:aranparapent@gmail.com" class="email flex flex-row gap-2">
             <img src="/svg/email.svg" alt="Email" class="size-5 invert">
             <p class="text-neutral-100">aranparapent@gmail.com</p>
-        </div>
+        </a>
+        
         <a href="https://instagram.com/aranparapent" class="text-neutral-300 hover:text-neutral-100 font-normal flex flex-row gap-2">
             <img src="/svg/instagram.svg" alt="Instagram: @aranparapent" class="size-5 invert"> @aranparapent
         </a>
@@ -29,8 +39,13 @@
  </div>
 </footer>
 
+<!-- Contact Modal -->
+{#if showModal}
+    <ContactModal bind:showModal={showModal}/>
+{/if}
+
 <style>
     footer {
-        background: var(--secondaryGradientVertical)
+        background: var(--secondaryGradientVertical);
     }
 </style>

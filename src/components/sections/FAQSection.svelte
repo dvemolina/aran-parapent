@@ -1,4 +1,8 @@
 <script>
+	import ContactModal from "../ContactModal.svelte";
+
+    let showModal = $state(false);
+
     const recomendations = [
         {description: "Tener entre 15 y 65 años preferiblemente, no obligatorio", icon: "/svg/id.svg"},
         {description: "Ropa cómoda para actividad deportiva en la montaña", icon: "/svg/mountain.svg"},
@@ -6,7 +10,7 @@
         {description: "Nosotros te proporcionamos casco y material de seguridad", icon: "/svg/safety.svg"},
         {description: "Ganas de disfrutar y ver todo desde otra perspectiva", icon: "/svg/perspective.svg"},
         {description: "Practicar tu mejor graznido de buitre pirenaico", icon: "/svg/bird.svg"}
-    ]
+    ];
 </script>
 
 <section id="faq-section" class="bg-neutral-200 w-full h-full flex flex-col justify-center items-center pt-16 lg:pt-26 pb-20 gap-8">
@@ -23,10 +27,12 @@
             {/each}
         </div>
     </div>
-    <button class="cta-button-secondary w-fit self-center px-8 py-1" aria-label="Quiero Volar">Quiero Volar</button>
+    <button onclick={() => showModal = true} class="cta-button-secondary w-fit self-center px-8 py-1" aria-label="Quiero Volar">Quiero Volar</button>
 </section>
 
-
+{#if showModal}
+    <ContactModal bind:showModal={showModal} title="Reserva tu Vuelo"/>
+{/if}
 <style>
     .card:hover {
         background: var(--ctaSecondaryGradient);

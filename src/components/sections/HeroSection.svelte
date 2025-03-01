@@ -1,3 +1,10 @@
+<script lang="ts">
+	import ContactModal from "../ContactModal.svelte";
+
+
+  let showModal = $state(false)
+</script>
+
 <section id="hero-section" class="@container/wrapper overlay w-full relative h-dvh">
 
     <div class="flex flex-col @5xl:flex-row h-full items-center justify-end bg-[url('/portrait-paraglide-cloud.webp')] @5xl:bg-[url('/landscape-paraglide.webp')] bg-cover bg-center @5xl:bg-right-bottom gap-6
@@ -14,11 +21,15 @@
                 <p class="font-sans text-md @5xl:text-xl text-center text-neutral-300"> Vuelos Biplaza en Parapente en Val d'Aran, <br>Ribagorza y rincones secretos del Pirineo. <br><span class="font-semibold text-neutral-200">¿Te atreves a descubrirlos?</span></p>
               </div>
               
-              <button aria-label="Reserva Tu Vuelo" class="cta-button-primary text-background @5xl:mt-6"><p class="text-xl @5xl:text-xl @5xl:py-2 @5xl:px-6 text-background font-sans font-semibold">Reserva Tu Vuelo</p></button>
+              <button onclick={() => showModal = true} aria-label="Reserva Tu Vuelo" class="cta-button-primary text-background @5xl:mt-6"><p class="text-xl @5xl:text-xl @5xl:py-2 @5xl:px-6 text-background font-sans font-semibold">Reserva Tu Vuelo</p></button>
             </div>
           </div>
       
 </section>
+
+{#if showModal}
+  <ContactModal bind:showModal={showModal} title="Reserva Tu Vuelo"/>
+{/if}
         
 <style>
     .overlay::before {

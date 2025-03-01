@@ -1,5 +1,8 @@
 <script lang="ts">
   import { onMount } from "svelte";
+
+  import ContactModal from "./ContactModal.svelte";
+  let showModal = $state(false)
   
   let isScrolled = $state(false);
   let menuOpen = $state(false);
@@ -41,7 +44,7 @@
     <nav class="@lg:flex flex-row justify-center items-center hidden space-x-6 {isScrolled ? 'lg:opacity-100' : 'lg:opacity-0'} transition-all">
       <a href="#services-section" class="text-neutral-100 hover:text-neutral-50 font-normal">Servicios</a>
       <a href="#about-section" class="text-neutral-100 hover:text-neutral-50 font-normal">Aran Parapent</a>
-      <a href="#" class="text-neutral-100 hover:text-neutral-50 font-normal">Contacto</a>
+      <a href="#" onclick={() => showModal = true} class="text-neutral-100 hover:text-neutral-50 font-normal">Contacto</a>
       <a href="https://instagram.com/aranparapent" class="text-neutral-300 hover:text-neutral-100 font-normal">
         <img src="/svg/instagram.svg" alt="Instagram: @aranparapent" class="size-5 invert">
       </a>
@@ -74,6 +77,11 @@
     </nav>
   </div>
 </header>
+
+<!-- Contact Modal -->
+{#if showModal}
+    <ContactModal bind:showModal={showModal}/>
+{/if}
 
 <style>
  /* Header background when scrolled */
