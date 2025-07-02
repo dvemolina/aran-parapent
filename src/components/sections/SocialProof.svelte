@@ -72,7 +72,7 @@
 		<div class="video-container rounded-xl border border-neutral-500 shadow-lg">
 			<video controls poster="/video-cover.webp">
 				<track kind="captions" />
-				<source src="aran-parapent-video.mp4" type="video/mp4" />
+				<source src="aran-parapent-video.webm" type="video/mp4" />
 				YTu navegador no es compatible con el video.
 			</video>
 		</div>
