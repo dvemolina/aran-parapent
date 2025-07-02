@@ -17,8 +17,8 @@
     <h1 class="text-neutral-950 font-semibold text-lg">{service.title}</h1>
     
     <!-- Fixed size container with aspect ratio -->
-    <div class="image-container-vertical rounded-lg">
-        <img src={service.imageUrl} alt={service.title} class="image-vertical">
+    <div class="image-container-vertical rounded-lg object-center">
+        <img src={service.imageUrl} alt={service.title} class="image-vertical object-center">
     </div>
 
     <p class="text-neutral-800">{service.description}</p>
